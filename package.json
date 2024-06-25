@@ -12,7 +12,8 @@
     "@primevue/themes": "4.0.0-rc.2",
     "@types/node": "^20.11.24",
     "primevue": "4.0.0-rc.2",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
