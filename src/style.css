@@ -1,3 +1,6 @@
+@import "primeflex/primeflex.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -76,4 +79,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
 }

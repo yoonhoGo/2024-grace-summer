@@ -1,11 +1,15 @@
 import { createApp } from "vue";
-import "./style.css";
+
 import App from "./App.vue";
 import PrimeVue from "primevue/config";
-import Aura from "@primevue/themes/aura";
-import Button from "primevue/button";
 import router from "./router";
 import { createPinia } from "pinia";
+import Aura from "@primevue/themes/aura";
+import "./index.css";
+import "./style.css";
+import Button from "primevue/button";
+import InputText from "primevue/inputtext";
+import Image from "primevue/image";
 
 const pinia = createPinia();
 const app = createApp(App);
@@ -18,5 +22,7 @@ app.use(PrimeVue, {
   },
 });
 app.component("Button", Button);
+app.component("InputText", InputText);
+app.component("Image", Image);
 
 app.mount("#app");
