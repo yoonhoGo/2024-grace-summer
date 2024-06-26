@@ -4,9 +4,11 @@ import ShareButtons from "@/components/ShareButtons.vue";
 </script>
 
 <template>
-  <div class="flex flex-column gap-5">
+  <div class="flex flex-column gap-5 min-w-screen">
     <!-- <h1 class="text-8xl">제목입니다.</h1> -->
-    <div class="text-8xl dongle-regular">2024 여름성경학교 광주성전</div>
+    <div class="text-8xl dongle-regular" style="word-break: keep-all">
+      2024 여름성경학교 광주성전
+    </div>
 
     <div class="flex flex-column gap-3 text-3xl dongle-regular text-yellow-400">
       <span> 날짜: 2024 년 7 월 13 일 </span>
@@ -25,7 +27,7 @@ import ShareButtons from "@/components/ShareButtons.vue";
     <div class="flex flex-column gap-2">
       <div class="text-2xl font-bold">오시는 길</div>
       <div class="text-xl">경기도 광주시 오포읍 마루들길 168</div>
-      <Image src="/src/assets/map.webp" alt="Image" width="500" />
+      <Image src="/map.webp" alt="Image" width="500" />
     </div>
 
     <div class="flex gap-3 justify-content-center">
