@@ -4,6 +4,7 @@ import { ref } from "vue";
 const user = ref({
   name: "",
   grade: "",
+  pickup: "",
 });
 </script>
 
@@ -13,7 +14,9 @@ const user = ref({
     <div class="flex flex-column gap-3">
       <InputText v-model="user.name" placeholder="이름" />
       <InputText v-model="user.grade" placeholder="학년" />
-      <Button>신청하기</Button>
+      <InputText v-model="user.pickup" placeholder="탑승위치" />
+      <Button><a href="sms:01023318579?body={{user.name}}/{{user.grade}}/{{user.pickup}}">안드로이드 신청하기</a></Button>
+      <Button><a href="sms:01023318579&body={{user.name}}/{{user.grade}}/{{user.pickup}}">아이폰 신청하기</a></Button>
     </div>
   </div>
 </template>
